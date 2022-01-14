@@ -7,3 +7,9 @@
 body {
     background: aqua;
 }
+
+.news {
+    background-color: green;
+    width: 400px;
+    text-transform: uppercase;
+}
