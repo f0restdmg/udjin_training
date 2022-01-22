@@ -5,13 +5,69 @@
 }
 
 /* Container */
-.container {
+.container_max {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
+.container_min {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
 
 
+
+
+
+
+
+/* BUTTONS */
+.welcome_btn {
+    width: 201px;
+    height: 33px;
+    left: calc(50% - 107px/2);
+    top: calc(50% - 23px/2);
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    text-align: center; 
+}
+.perfomance_btn {
+    position:inherit;
+
+
+    width: 201px;
+    height: 33px;
+    margin-top: 20px;
+
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    text-align: center; 
+}
+.boostedrev_btn {
+    width: 101px;
+    height: 33px;
+    left: calc(50% - 107px/2);
+    top: calc(50% - 23px/2);
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    text-align: center; 
+}
 
 
 
@@ -20,17 +76,15 @@
 
 
 /* HEADER */
-/* header_top */
-.header_top {
+.header {
     height: 20px;
     background-color: #000;
     color: white;  
 }
-
-.header_top_text {
+.header_text {
     font-family: 'Roboto', sans-serif;
     font-style: 400;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     padding-top: 2.5px;
     padding-bottom: 2.5px;
@@ -38,41 +92,49 @@
     line-height: 15px;
     letter-spacing: 2px;
 }
+.header_logo {
+    width: 160px;
+    height: 36px;
+}
 
 
-/* header_bottom */
 
-.header_bottom {
+
+
+
+
+
+/* MAIN_MENU */
+.main_menu {
+    width: 99%;
+    display: flex;
     height: 60px;
-    background: #E5E5E5;
-    align-content: center;
+    background: #ffffff;
+    align-items: center;
+    justify-content: space-between;
 }
-
-
-.nav {
+ .nav {
     text-transform: uppercase;
-    margin: 0 auto;
-}
-
-.link {
+ }
+ .link {
+    font-family: 'Roboto', sans-serif;
     color: #000;
-    margin-left: 0;
-    float: left;
+    margin-left: 0 100;
     text-decoration: none;
     transition: color .1s linear;
-    font-weight: 400;
-
-}
-
+    font-weight: 350;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+} 
 .link:hover {
     color: #f10000;
 }
-
 .link:hover:after,.nav_link.active:after
  {
     opacity: 1;
 }
-
 .link:hover:after {
     opacity: 1;
 }
@@ -85,74 +147,44 @@
 
 
 /* WELCOME */
-
 .welcome_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(/img/Fon1.jpg);
     height: 810px;
 }
-
 .welcome_title {
-    display: block;
-    position: relative;
     width: 511px;
     height: 51px;
     left: calc(50% - 511px/2);
-    top: 8px;
+    margin-top: 53px;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 350;
     font-size: 44px;
     line-height: 51px;
 
-    text-align: center;
-
-    color: #fff;
+    color: #000;
 }
-
 .welcome_subtitle {
-    position: relative;
     width: 537px;
     height: 19px;
     left: calc(50% - 537px/2);
-    top: 73px;
+    margin-top: 14px;
+    margin-bottom: 22px;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 350;
     font-size: 15px;
     line-height: 19px;
 
     text-align: center;
     letter-spacing: 1px;
 
-    color: #fff;
-}
-
-.btn {
-    display: flex;
-    position: relative;
-    width: 537px;
-    left: calc(50% - 537px/2);
-    top: 73px;
-
-}
-
-.button {
-    width: 107px;
-    height: 23px;
-    left: calc(50% - 107px/2);
-    top: calc(50% - 23px/2);
-
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-
-    text-align: center;
-
-    background-color: #FF4A32;
+    color: #000;
 }
 
 
@@ -176,7 +208,6 @@
     display: flex;
     align-items: center;
 }
-
 .logo {
     margin: 0;
     padding: 0px;
@@ -190,7 +221,9 @@
 
 
 /* LOOKING */
-
+.looking {
+    margin: 45px;
+}
 .looking_title {
     display: block;
     position: relative;
@@ -210,7 +243,6 @@
     color: #000;
     margin-bottom: 17px;
 }
-
 .looking_subtitle {
     display: block;
     position: relative;
@@ -238,52 +270,31 @@
 
 
 /* CARD */
-
 .card {
-    padding: 44px;
-    display: block;
-    margin: 44px -15px 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    vertical-align: top;
+    padding: 45px;
 }
-
-
 .card_item {
-    position: relative;
     display: inline-block;
     padding: 0 20px;      
 }
-
-.card_img img {
-    max-width: 100%;
-    height: auto;
-    transition: opacity .1s  linear;
-    height: 580px;
-    width: 580px;
-    object-fit: cover;
+.card_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_content {
+    position: absolute;
 
 }
-
 .card_logo {
-    width: 29px;
-    height: 47px;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 30%;
-    bottom: 50%;
+    text-align: center;
+    color: white;
 }
-
 .card_text {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 30%;
-    bottom: 50%;
-    color: white ;
+    color: rgb(255, 255, 255) ;
+    text-align: center;
 }
 
 
@@ -297,15 +308,20 @@
 .perfomance {
 margin-bottom: 44px;
 }
-
 .perfomance_inner {
+    display: flex;
+    justify-content: center;
+    align-items: start;
     width: 100%;
     height: 736px;
     max-width: 1440px;
     background-image: url(/img/skatefon.png);
 }
+.perfomance_text {
+    position: absolute;
+    text-align: center;
+}
 .perfomance_suptitle {
-    position: relative;
     width: 537px;
     height: 19px;
     left: calc(50% - 537px/2);
@@ -315,34 +331,33 @@ margin-bottom: 44px;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    
 
     text-align: center;
     letter-spacing: 1px;
 
-    color: #fff;
+    color: #000;
 } 
-
  .perfomance_title {
-    display: block;
-    position: relative;
     width: 511px;
     height: 51px;
     left: calc(50% - 511px/2);
     top: 8px;
+    margin-top: 11px;
     
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 44px;
     line-height: 51px;
     
     text-align: center;
     
-    color: #fff;
+    color: #000;
     }
-    
 .perfomance_subtitle {
-    position: relative;
     width: 537px;
     height: 19px;
     left: calc(50% - 537px/2);
@@ -357,31 +372,95 @@ margin-bottom: 44px;
     text-align: center;
     letter-spacing: 1px;
     
-    color: #fff;
-    }
-    
-.btn {
+    color: #000;
+    } 
+
+
+
+
+
+
+
+
+    /* BOOSTEDREV */
+.boostedrev {
+    margin: 45px;
+}
+.boostedrev_cards {
     display: flex;
-    position: relative;
-    width: 537px;
-    left: calc(50% - 537px/2);
-    top: 73px;
-    
+    width: 100%;
+    max-width: 1440px;
+    justify-content: space-between;
     }
-    
-.button {
-    width: 107px;
-    height: 23px;
-    left: calc(50% - 107px/2);
-    top: calc(50% - 23px/2);
-    
+.boostedrev_cards_item {
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    height: 380px;
+    margin: 20px;  
+    }
+.boostedrev_cards_inner {
+    display: flex;
+    justify-items:center;
+    flex-direction: column;
+    justify-content: center;
+}
+.boostedrev_title {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: center;
+}
+.boostedrev_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 15px;
-    line-height: 22px;
-    
+    line-height: 22.5px;
+    text-align: inherit;
+}
+
+
+
+
+
+
+
+    /* INSTOCK */
+.instock {
+    margin: 45px;
+}
+.instock_cards {
+    display: flex;
+}
+.instock_cards_item {
+    align-items: center;
+    width: 100%;
+}
+.instock_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instock_text {
+    position: absolute;
+    color: #fff;
     text-align: center;
     
-    background-color: #FF4A32;
-    }
+}
+.instock_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+}
+.instock_subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23.44px;
+}
