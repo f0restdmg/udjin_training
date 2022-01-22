@@ -12,19 +12,25 @@
 }
 
 
+
+
+
+
+
+
+
 /* HEADER */
 /* header_top */
 .header_top {
     height: 20px;
-    background-color: #000000;
-    color: white;
-    
+    background-color: #000;
+    color: white;  
 }
 
 .header_top_text {
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-style: 400;
+    font-weight: 400;
     font-size: 12px;
     padding-top: 2.5px;
     padding-bottom: 2.5px;
@@ -37,7 +43,6 @@
 /* header_bottom */
 
 .header_bottom {
-
     height: 60px;
     background: #E5E5E5;
     align-content: center;
@@ -45,17 +50,18 @@
 
 
 .nav {
-margin: o auto;
+    text-transform: uppercase;
+    margin: 0 auto;
 }
 
-
-
 .link {
-color: #000000;
-margin-left: 0;
-float: left;
-text-decoration: none;
-transition: color .1s linear;
+    color: #000;
+    margin-left: 0;
+    float: left;
+    text-decoration: none;
+    transition: color .1s linear;
+    font-weight: 400;
+
 }
 
 .link:hover {
@@ -73,49 +79,54 @@ transition: color .1s linear;
 
 
 
+
+
+
+
+
 /* WELCOME */
 
 .welcome_inner {
-    background-color: #9c5f5f;
+    background-image: url(/img/Fon1.jpg);
     height: 810px;
 }
 
 .welcome_title {
-display: block;
-position: relative;
-width: 511px;
-height: 51px;
-left: calc(50% - 511px/2);
-top: 8px;
+    display: block;
+    position: relative;
+    width: 511px;
+    height: 51px;
+    left: calc(50% - 511px/2);
+    top: 8px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 44px;
-line-height: 51px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 51px;
 
-text-align: center;
+    text-align: center;
 
-color: #ffffff;
+    color: #fff;
 }
 
 .welcome_subtitle {
-position: relative;
-width: 537px;
-height: 19px;
-left: calc(50% - 537px/2);
-top: 73px;
+    position: relative;
+    width: 537px;
+    height: 19px;
+    left: calc(50% - 537px/2);
+    top: 73px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
 
-text-align: center;
-letter-spacing: 1px;
+    text-align: center;
+    letter-spacing: 1px;
 
-color: #ffffff;
+    color: #fff;
 }
 
 .btn {
@@ -128,21 +139,27 @@ color: #ffffff;
 }
 
 .button {
-width: 107px;
-height: 23px;
-left: calc(50% - 107px/2);
-top: calc(50% - 23px/2);
+    width: 107px;
+    height: 23px;
+    left: calc(50% - 107px/2);
+    top: calc(50% - 23px/2);
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
 
-text-align: center;
+    text-align: center;
 
-background-color: #FF4A32;
+    background-color: #FF4A32;
 }
+
+
+
+
+
+
 
 
 /* MANUFACTURERS */
@@ -150,7 +167,7 @@ background-color: #FF4A32;
 .manufacturers {
     display: flex;
     flex-direction: row; 
-    background-color: #000000;
+    background-color: #000;
     width: 100%;
     max-width: 1440px;
     height: 83px;
@@ -166,55 +183,66 @@ background-color: #FF4A32;
 }
 
 
+
+
+
+
+
+
 /* LOOKING */
 
 .looking_title {
-display: block;
-position: relative;
-width: 663px;
-height: 36px;
-left: calc(50% - 663px/2 + 0.5px);
-top: 21.64px;
+    display: block;
+    position: relative;
+    width: 663px;
+    height: 36px;
+    left: calc(50% - 663px/2 + 0.5px);
+    top: 21.64px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 32px;
-line-height: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
 
-text-align: center;
+    text-align: center;
 
-color: #000000;
-margin-bottom: 17px;
+    color: #000;
+    margin-bottom: 17px;
 }
 
 .looking_subtitle {
-display: block;
-position: relative;
-width: 685px;
-height: 57px;
-left: calc(50% - 685px/2 - 0.5px);
-top: 74.64px;
+    display: block;
+    position: relative;
+    width: 685px;
+    height: 57px;
+    left: calc(50% - 685px/2 - 0.5px);
+    top: 74.64px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
 
-text-align: center;
+    text-align: center;
 
-color: #000000;
+    color: #000;
 }
+
+
+
+
+
 
 
 
 /* CARD */
 
 .card {
-    padding: 100px;
+    padding: 44px;
     display: block;
-    margin: 200px -15px 0;
+    margin: 44px -15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -233,28 +261,127 @@ color: #000000;
     max-width: 100%;
     height: auto;
     transition: opacity .1s  linear;
-    height: 300px;
-    width: 380px;
+    height: 580px;
+    width: 580px;
     object-fit: cover;
- 
+
 }
 
 .card_logo {
     width: 29px;
     height: 47px;
-position: absolute;
-left: 50%;
-right: 50%;
-top: 30%;
-bottom: 50%;
-
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 30%;
+    bottom: 50%;
 }
 
 .card_text {
     position: absolute;
     left: 50%;
-right: 50%;
-top: 30%;
-bottom: 50%;
-color: white ;
+    right: 50%;
+    top: 30%;
+    bottom: 50%;
+    color: white ;
 }
+
+
+
+
+
+
+
+
+/* PERFOMANCE */
+.perfomance {
+margin-bottom: 44px;
+}
+
+.perfomance_inner {
+    width: 100%;
+    height: 736px;
+    max-width: 1440px;
+    background-image: url(/img/skatefon.png);
+}
+.perfomance_suptitle {
+    position: relative;
+    width: 537px;
+    height: 19px;
+    left: calc(50% - 537px/2);
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #fff;
+} 
+
+ .perfomance_title {
+    display: block;
+    position: relative;
+    width: 511px;
+    height: 51px;
+    left: calc(50% - 511px/2);
+    top: 8px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 51px;
+    
+    text-align: center;
+    
+    color: #fff;
+    }
+    
+.perfomance_subtitle {
+    position: relative;
+    width: 537px;
+    height: 19px;
+    left: calc(50% - 537px/2);
+    top: 73px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    
+    text-align: center;
+    letter-spacing: 1px;
+    
+    color: #fff;
+    }
+    
+.btn {
+    display: flex;
+    position: relative;
+    width: 537px;
+    left: calc(50% - 537px/2);
+    top: 73px;
+    
+    }
+    
+.button {
+    width: 107px;
+    height: 23px;
+    left: calc(50% - 107px/2);
+    top: calc(50% - 23px/2);
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    
+    text-align: center;
+    
+    background-color: #FF4A32;
+    }
