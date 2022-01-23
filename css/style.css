@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Container */
 .container_max {
     width: 100%;
@@ -440,3 +446,41 @@ margin-bottom: 44px;
     line-height: 23.44px;
 }
 /* VIDEO */
+.slider {
+    flex-wrap: wrap;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.slider_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider_text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FF4A32;
+    margin: 12px 0 3px;  
+}
+
+.slider_prices {
+    display: flex;
+    gap: 4px;
+}
+
+.price {
+    font-size: 14px;
+    line-height: 18px;
+    color: #373737;
+}
+
+.full_price {
+    color: #FF4A32;
+    font-size: 14px;
+}
+
