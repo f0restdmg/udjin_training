@@ -93,8 +93,10 @@ body {
     justify-content: space-between;
 }
  .nav {
+     display: flex;
+     gap: 50px;
     text-transform: uppercase;
-    width: 688px;
+
  }
  .link {
     font-family: 'Roboto', sans-serif;
@@ -109,7 +111,7 @@ body {
     letter-spacing: 1px;
 } 
 .link:hover {
-    color: #f10000;
+    color:  #FF4A32;
 }
 .link:hover:after,.nav_link.active:after
  {
@@ -559,12 +561,24 @@ margin-bottom: 44px;
 }
 
 .about_us_link {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-decoration: none;
+    transition: color .1s linear;
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
     line-height: 21px;
-    text-decoration: none;
-    transition: color .1s linear;
+}
+.about_us_link:hover {
+    color:  #FF4A32;
+}
+.about_us_link:hover:after
+ {
+    opacity: 1;
+}
+.about_us_link:hover:after {
+    opacity: 1;
 }
 
 .about_us_item_inner {
