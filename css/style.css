@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Container */
 .container_max {
     width: 100%;
@@ -16,64 +22,44 @@
     margin: 0 auto;
 }
 
-
-
-
-
-
-
 /* BUTTONS */
+.btn {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    width: 201px;
+    padding: 5px 0;
+    color: #fff;
+    background: #FF4A32;
+    border-radius: 35px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
 .welcome_btn {
-    width: 201px;
-    height: 33px;
-    left: calc(50% - 107px/2);
-    top: calc(50% - 23px/2);
-
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-
-    text-align: center; 
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
 }
-.perfomance_btn {
-    position:inherit;
-
-
+.prfmnc_btn {
     width: 201px;
-    height: 33px;
-    margin-top: 20px;
 
-
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-
-    text-align: center; 
 }
-.boostedrev_btn {
+.bstdrv_btn {
     width: 101px;
-    height: 33px;
-    left: calc(50% - 107px/2);
-    top: calc(50% - 23px/2);
-
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-
-    text-align: center; 
+    margin-top: 18px;
 }
-
-
-
-
-
-
 
 /* HEADER */
 .header {
@@ -97,13 +83,6 @@
     height: 36px;
 }
 
-
-
-
-
-
-
-
 /* MAIN_MENU */
 .main_menu {
     width: 99%;
@@ -114,7 +93,10 @@
     justify-content: space-between;
 }
  .nav {
+     display: flex;
+     gap: 50px;
     text-transform: uppercase;
+
  }
  .link {
     font-family: 'Roboto', sans-serif;
@@ -129,7 +111,7 @@
     letter-spacing: 1px;
 } 
 .link:hover {
-    color: #f10000;
+    color:  #FF4A32;
 }
 .link:hover:after,.nav_link.active:after
  {
@@ -138,13 +120,6 @@
 .link:hover:after {
     opacity: 1;
 }
-
-
-
-
-
-
-
 
 /* WELCOME */
 .welcome_inner {
@@ -187,13 +162,6 @@
     color: #000;
 }
 
-
-
-
-
-
-
-
 /* MANUFACTURERS */
 
 .manufacturers {
@@ -212,13 +180,6 @@
     margin: 0;
     padding: 0px;
 }
-
-
-
-
-
-
-
 
 /* LOOKING */
 .looking {
@@ -262,13 +223,6 @@
     color: #000;
 }
 
-
-
-
-
-
-
-
 /* CARD */
 .card {
     display: flex;
@@ -297,90 +251,58 @@
     text-align: center;
 }
 
-
-
-
-
-
-
-
 /* PERFOMANCE */
 .perfomance {
 margin-bottom: 44px;
 }
 .perfomance_inner {
-    display: flex;
-    justify-content: center;
-    align-items: start;
     width: 100%;
     height: 736px;
     max-width: 1440px;
     background-image: url(/img/skatefon.png);
 }
 .perfomance_text {
-    position: absolute;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .perfomance_suptitle {
-    width: 537px;
-    height: 19px;
-    left: calc(50% - 537px/2);
-    
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     margin-top: 40px;
-    margin-bottom: 15px;
-    
-
     text-align: center;
     letter-spacing: 1px;
-
     color: #000;
+    margin-bottom: 11px;
 } 
  .perfomance_title {
-    width: 511px;
-    height: 51px;
-    left: calc(50% - 511px/2);
-    top: 8px;
     margin-top: 11px;
-    
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
     line-height: 51px;
-    
     text-align: center;
-    
     color: #000;
+    margin-bottom: 15px;
     }
 .perfomance_subtitle {
-    width: 537px;
-    height: 19px;
-    left: calc(50% - 537px/2);
-    top: 73px;
-    
+    width: 488px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
-    
     text-align: center;
     letter-spacing: 1px;
-    
     color: #000;
+
+    margin-bottom: 20px;
     } 
-
-
-
-
-
-
-
 
     /* BOOSTEDREV */
 .boostedrev {
@@ -422,12 +344,6 @@ margin-bottom: 44px;
     text-align: inherit;
 }
 
-
-
-
-
-
-
     /* INSTOCK */
 .instock {
     margin: 45px;
@@ -463,4 +379,248 @@ margin-bottom: 44px;
     font-style: normal;
     font-size: 18px;
     line-height: 23.44px;
+}
+/* VIDEO */
+.video_item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 64px;
+}
+
+/* SLIDER */
+.slider {
+    flex-wrap: wrap;
+    padding: 0 230px;
+    display: flex;
+    justify-content: flex-start;
+}
+.slider_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.slider_title_text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.slider_object {
+    width: 70px;
+    height: 2px;
+    background-color: #CFCFCF;
+    margin-top: 22px;
+    margin-bottom: 42px;
+    ;
+}
+
+.slider_item {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider_text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FF4A32;
+    margin: 12px 0 3px;  
+}
+
+.slider_prices {
+    display: flex;
+    gap: 4px;
+}
+
+.price {
+    font-size: 14px;
+    line-height: 18px;
+    color: #373737;
+}
+
+.full_price {
+    color: #FF4A32;
+    font-size: 14px;
+}
+
+.slick-next, .slick-prev {
+    width: 44px !important;
+    z-index: 2222;
+    transform: translateY(-50%);
+    height: 44px !important;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.75) !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    content: '' !important;
+}
+
+.slick-prev {
+    left: 230px !important;
+    background-image: url('../img/arrow_left.svg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.slick-next {
+    right: 230px !important;
+    background-image: url('../img/arrow_right.svg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* POLOSA */
+.polosa_object {
+    height: 66px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
+    border-radius: 0px;
+    margin: 4px 0 28px;
+}
+
+/* GOFAST */
+.gofast_inner {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    height: 308px;
+    background-color:#000;
+    align-items: center;
+    gap: 115px;  
+}
+.gofast_icon {
+    text-align: center;
+}
+
+.gofast_title {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 31px;
+    line-height: 36px;
+}
+
+.gofast_text {
+    width: 270px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/* ABOUT_US */
+.about_us_inner {
+    height: 329px;
+    display: flex;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+
+}
+
+.about_us_item {
+    width: 33.3%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+.about_us_title {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.about_us_logo {
+    margin: 50px 0 0 100px;
+    width: 160px;
+    height: 134px;
+}
+
+.about_us_links {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.about_us_link {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-decoration: none;
+    transition: color .1s linear;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+}
+.about_us_link:hover {
+    color:  #FF4A32;
+}
+.about_us_link:hover:after
+ {
+    opacity: 1;
+}
+.about_us_link:hover:after {
+    opacity: 1;
+}
+
+.about_us_item_inner {
+    width: 367px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us_text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.about_us_adress {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 19px;
+}
+
+/* FOOTER */
+.footer_inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+.footer_text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18.5px;
+    margin-left: 200px;
+}
+
+.footer_images {
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    gap: 5px;
 }
